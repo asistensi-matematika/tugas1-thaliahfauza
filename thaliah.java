@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Thaliah
  */
 
-public class thaliah {
+public class PR1 {
     public static void main (String []args){
         Scanner input = new Scanner (System.in);
         
@@ -36,6 +36,12 @@ public class thaliah {
             }
             else if(a!=1){
                 System.out.println("Polinomial " + a + "x^2 + " + b + "x + " + c + " memiliki");
+            }
+            else if(b==0){
+                System.out.println("Polinomial " + a + "x^2 + " + c + " memiliki");
+            }
+            else if(c==0){
+                System.out.println("Polinomial " + a + "x^2 + " + b + "x memiliki");
             }
         
         D = (int)(Math.pow(b,2) - (4*a*c));
