@@ -32,17 +32,44 @@ public class PR1 {
             System.out.println("Nilai a tidak boleh 0");
         }else if(a!=0){
             if(a==1){
-            System.out.println("Polinomial x^2 + " + b + "x + " + c + " memiliki");
+            if(b==0 && c!= 0){
+                System.out.println("Polinomial x^2 + " + c + " memiliki");
             }
-            else if(a!=1){
-                System.out.println("Polinomial " + a + "x^2 + " + b + "x + " + c + " memiliki");
+            else if(b==0 && c==0){
+                System.out.println("Polinomial x^2 memiliki");
             }
-            else if(b==0){
+            else if(b!=0 && c==0){
+                System.out.println("Polinomial x^2 + " + b + "x memiliki");}
+            else if(b!=0 && c!=0){
+                System.out.println("Polinomial x^2 + " + b + "x +" + c+ "memiliki");
+            }}
+            
+            else if(a>0){
+              if(b==0 && c!= 0){
                 System.out.println("Polinomial " + a + "x^2 + " + c + " memiliki");
             }
-            else if(c==0){
-                System.out.println("Polinomial " + a + "x^2 + " + b + "x memiliki");
+            else if(b==0 && c==0){
+                System.out.println("Polinomial " + a + "x^2 memiliki");
+            }  
+            else if(b!=0 && c==0){
+                System.out.println("Polinomial " + a + "x^2 +" + b + "x memiliki");
             }
+            else if(b!=0 && c!=0){
+                System.out.println("Polinomial " + a + "x^2 +" + b + "x + " + c+ "memiliki");
+            }}
+            else if(a<0){
+              if(b==0 && c!= 0){
+                System.out.println("Polinomial " + a + "x^2 + " + c + " memiliki");
+            }
+            else if(b==0 && c==0){
+                System.out.println("Polinomial " + a +"x^2 memiliki");
+            }  
+            else if(b!=0 && c==0){
+                System.out.println("Polinomial " + a + "x^2 +" + b + "x memiliki");
+            }
+            else if(b!=0 && c!=0){
+                System.out.println("Polinomial " + a + "x^2 +" + b + "x +" + c+ "memiliki");
+            }}}
         
         D = (int)(Math.pow(b,2) - (4*a*c));
         System.out.println("1. " + "Diskriminan          : " + D);
@@ -134,4 +161,4 @@ public class PR1 {
         }else{
             System.out.println("5. Nilai Minimal Lokal  : 0");
         }
-}}}}
+}}}
